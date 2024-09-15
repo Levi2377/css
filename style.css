@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30vh 40vh 30vh;
+    grid-template-areas: "header header header"
+        "content content sidebar"
+        "footer footer footer" ;
+}
+
+.header {
+    grid-area: header;
+    border-radius: 5px;
+    background-color: rgba(118, 183, 243, 0.466);
+}
+
+.content {
+    grid-area: content;
+    border-radius: 5px;
+    background-color: rgba(118, 183, 243, 0.466);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    border-radius: 5px;
+    background-color: rgba(118, 183, 243, 0.466);
+}
+
+.footer {
+    grid-area: footer;
+    border-radius: 5px;
+    background-color: rgba(118, 183, 243, 0.466);
+}
+
+
+.header:hover {
+    background-color: rgb(228, 46, 76);
+    color: black;
+    transition-duration: 0.3s;
+}
+.content:hover {
+    background-color: rgb(238, 104, 50);
+    color: black;
+    transition-duration: 0.3s;
+}
+.sidebar:hover {
+    background-color: rgb(48, 202, 202);
+    color: black;
+    transition-duration: 0.3s;
+}
+.footer:hover {
+    background-color: rgb(10, 139, 10);
+    color: black;
+    transition-duration: 0.3s;
+}
